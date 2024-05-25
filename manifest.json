@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "yt_no_contents",
+    "action": {},
+    "version": "0.1",
+    "permissions": ["activeTab", "scripting", "tabs"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "no_contents.js"
+    }
+}
