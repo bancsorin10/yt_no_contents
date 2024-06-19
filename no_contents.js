@@ -2,8 +2,14 @@ chrome.runtime.onInstalled.addListener(() => {
   chrome.action.setBadgeText({
     text: "ON",
   });
-    // chrome.permissions.request({"permissions": ["<all_urls>"]});
 });
+
+chrome.runtime.onStartup.addListener(() => {
+  chrome.action.setBadgeText({
+    text: "ON",
+  });
+});
+
 const extensions = 'https://developer.chrome.com/docs/extensions'
 const webstore = 'https://developer.chrome.com/docs/webstore'
 
